@@ -273,7 +273,7 @@ void WS2812FX::increaseLength(uint16_t s) {
 
 void WS2812FX::decreaseLength(uint16_t s) {
   uint16_t seglen = _segments[0].stop - _segments[0].start + 1;
-  fill(BLACK, _segments[0].start, seglen);
+  fill(WS2812FX_BLACK, _segments[0].start, seglen);
   show();
 
   if (s < seglen) setLength(seglen - s);
@@ -693,3 +693,4 @@ void WS2812FX::setExtDataSrc(uint8_t seg, uint8_t *src, uint8_t cnt) {
   _segment_runtimes[seg].extDataSrc = src;
   _segment_runtimes[seg].extDataCnt = cnt;
 }
+
