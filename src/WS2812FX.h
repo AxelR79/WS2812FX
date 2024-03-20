@@ -73,8 +73,8 @@
 #define RED        (uint32_t)0xFF0000
 #define GREEN      (uint32_t)0x00FF00
 #define BLUE       (uint32_t)0x0000FF
-#define WHITE      (uint32_t)0xFFFFFF
-#define BLACK      (uint32_t)0x000000
+#define WS2812FX_WHITE      (uint32_t)0xFFFFFF
+#define WS2812FX_BLACK      (uint32_t)0x000000
 #define YELLOW     (uint32_t)0xFFFF00
 #define CYAN       (uint32_t)0x00FFFF
 #define MAGENTA    (uint32_t)0xFF00FF
@@ -525,3 +525,4 @@ struct Oscillator {
 #endif
 
 #endif
+
